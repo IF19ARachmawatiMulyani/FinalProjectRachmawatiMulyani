@@ -27,16 +27,15 @@
             android:layout_height="wrap_content"
             android:hint="Masukkan username"
             android:inputType="text"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textStyle="normal"
-            android:text="Pasword"
-            android:layout_marginTop="10dp"/>
+            android:text="Password"
+            android:layout_marginTop="20dp"/>
 
         <EditText
             android:id="@+id/etPass"
@@ -44,8 +43,7 @@
             android:layout_height="wrap_content"
             android:hint="Masukkan password"
             android:inputType="text"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"/>
+            android:textSize="20sp" />
 
         <Button
             android:textSize="20sp"
