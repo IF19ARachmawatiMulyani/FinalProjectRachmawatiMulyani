@@ -45,16 +45,26 @@
             android:inputType="text"
             android:textSize="20sp" />
 
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="false"
+            android:src="@mipmap/logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
         <Button
-            android:textSize="20sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Masuk"
-            android:layout_weight="1"
-            android:textAllCaps="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#1C37D1"/>
+            android:id="@+id/button_Masuk"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="320dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:onClick="Masuk"
+            android:text="Log in"
+            android:textAllCaps="true"/>
+
 
     </LinearLayout>
 
