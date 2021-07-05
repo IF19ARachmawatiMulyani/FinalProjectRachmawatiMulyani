@@ -85,7 +85,7 @@
             android:layout_marginBottom="24dp"
             android:text="Sudah punya akun? Log in disini"
             android:gravity="center"
-            android:textSize="16dip"
+            android:textSize="15dip"
             android:onClick="Login"/>
 
     </LinearLayout>
