@@ -11,7 +11,8 @@ import androidx.core.view.ViewCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-    public class ScrollHandler extends CoordinatorLayout.Behavior<BottomNavigationView> {
+
+public class ScrollHandler extends CoordinatorLayout.Behavior<BottomNavigationView> {
         @Override
         public boolean layoutDependsOn(CoordinatorLayout parent, BottomNavigationView child, View dependency) {
             return dependency instanceof FrameLayout;
