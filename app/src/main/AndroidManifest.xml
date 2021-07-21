@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LaundryApp">
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".CurrentLaundryAdapter" />
+        <activity android:name=".CurrentLaundryAdapter"></activity>
         <activity android:name=".Add_Laundry" />
         <activity android:name=".Register_pegawai" />
         <activity android:name=".Splash" />
