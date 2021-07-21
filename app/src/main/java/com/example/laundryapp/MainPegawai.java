@@ -33,7 +33,7 @@ public class MainPegawai extends AppCompatActivity {
                     return true;
 
                 case R.id.navigation_profile_pegawai:
-                    fragment = new ProfilePegawaiFragment();
+                    fragment = new ProfilPegawaiFragment();
                     loadFragment(fragment);
                     return true;
             }

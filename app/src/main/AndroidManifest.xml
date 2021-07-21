@@ -9,19 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LaundryApp">
-        <activity android:name=".ProfilPegawaiFragment"></activity>
-        <activity android:name=".CurrentLaundryAdapter" />
+        <activity android:name=".ActivityDetailPelanggan"></activity>
         <activity android:name=".Add_Laundry" />
         <activity android:name=".Register_pegawai" />
         <activity android:name=".Splash" />
         <activity android:name=".logIn" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

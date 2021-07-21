@@ -12,20 +12,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import com.google.firebase.firestore.FirebaseFirestore;
 
-
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
-import java.util.Calendar;
 
-import static java.lang.Integer.getInteger;
 import static java.lang.Integer.parseInt;
 
 //import android.support.v7.app.AppCompatActivity;
@@ -44,7 +38,6 @@ public class Add_Laundry extends AppCompatActivity {
     int hargatas = 10000;
     int totalHarga = 0;
     boolean[] hargaTambahanArr = {false, false, false};
-    SimpleDateFormat simpleDateFormat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +58,6 @@ public class Add_Laundry extends AppCompatActivity {
         final CheckBox sepatu = findViewById(R.id.sepatu_cb);
 
         firebaseFirestore = FirebaseFirestore.getInstance();
-
 
         hargaKilo.setText(beratCucianInt + " kg x " + hargaPerKilo + " = Rp." + (beratCucianInt * hargaPerKilo));
 
@@ -195,5 +187,4 @@ public class Add_Laundry extends AppCompatActivity {
         totalHarga = (totalHargaTambahan + totalHarga);
         totalHargaView.setText("TOTAL : Rp." + totalHarga);
     }
-
 }

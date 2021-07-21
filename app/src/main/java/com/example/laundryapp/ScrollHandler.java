@@ -1,8 +1,5 @@
 package com.example.laundryapp;
 
-//import android.support.design.widget.BottomNavigationView;
-//import android.support.design.widget.CoordinatorLayout;
-//import android.support.v4.view.ViewCompat;
 import android.view.View;
 import android.widget.FrameLayout;
 

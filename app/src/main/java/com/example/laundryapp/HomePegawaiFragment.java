@@ -73,6 +73,7 @@ public class HomePegawaiFragment extends Fragment {
             @Override
             public void onBindViewHolder(@NonNull Holder holder, int position, @NonNull final ClassPelanggan model) {
                 progressBar.setVisibility(View.GONE);
+                holder.tgl.setText(model.gettanggalMasusk());
                 holder.ID.setText(model.getID());
                 holder.nama.setText(model.getNama());
                 holder.harga.setText(model.getTotalHarga());
@@ -100,11 +101,12 @@ public class HomePegawaiFragment extends Fragment {
 
     public class Holder extends RecyclerView.ViewHolder {
         TextView nama;
-        TextView harga, ID;
+        TextView harga, ID, tgl;
         ConstraintLayout constraintLayout;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
+            tgl = itemView.findViewById(R.id.tanggalpelanggan);
             ID = itemView.findViewById(R.id.Id);
             nama = itemView.findViewById(R.id.tvNama);
             harga = itemView.findViewById(R.id.tvHarga);

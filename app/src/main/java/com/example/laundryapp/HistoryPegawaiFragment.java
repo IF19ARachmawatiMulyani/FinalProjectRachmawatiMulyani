@@ -31,7 +31,7 @@ public class HistoryPegawaiFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_history, container, false);
+        View view = inflater.inflate(R.layout.activity_history_pegawai_fragment, container, false);
         recyclerView = view.findViewById(R.id.recycleViewhistory);
         progressBar = view.findViewById(R.id.progressBarhistory);
         firebaseFirestore = FirebaseFirestore.getInstance();
@@ -63,6 +63,7 @@ public class HistoryPegawaiFragment extends Fragment {
                 progressBar.setVisibility(View.GONE);
                 holder.namaHistory.setText(model.getNama());
                 holder.hargaHistory.setText(model.getTotalHarga());
+                holder.tglhistory.setText(model.gettanggalMasusk());
             }
 
             @Override
@@ -75,12 +76,13 @@ public class HistoryPegawaiFragment extends Fragment {
     }
 
     public class Holder extends RecyclerView.ViewHolder {
-        TextView namaHistory;
+        TextView namaHistory, tglhistory;
         TextView hargaHistory;
         ConstraintLayout constraintLayout;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
+            tglhistory = itemView.findViewById(R.id.tanggalpelangganhistory);
             namaHistory = itemView.findViewById(R.id.tvNamahistory);
             hargaHistory = itemView.findViewById(R.id.tvHargahistory);
             constraintLayout = itemView.findViewById(R.id.constaintLayouthistory);
