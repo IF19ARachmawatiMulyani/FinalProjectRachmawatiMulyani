@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nama"
-                android:inputType="text"/>
+                android:inputType="textCapWords"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Parfum"
-                android:inputType="text"/>
+                android:inputType="textCapWords"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
@@ -85,11 +85,11 @@
                 android:layout_weight="9"
                 android:paddingRight="10dp">
                 <EditText
-                    android:id="@+id/lama_pencucian"
+                    android:id="@+id/lamaPencucian"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Estimasi lama pencucian"
-                    android:inputType="numberDecimal"/>
+                    android:inputType="number"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
