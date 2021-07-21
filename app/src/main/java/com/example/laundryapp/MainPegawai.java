@@ -1,15 +1,10 @@
 package com.example.laundryapp;
 
-
-//import android.support.annotation.NonNull;
-//import android.support.design.widget.BottomNavigationView;
-//import android.support.design.widget.CoordinatorLayout;
-//import android.support.v4.app.Fragment;
-//import android.support.v4.app.FragmentTransaction;
-//import android.support.v7.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,16 +15,20 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainPegawai extends AppCompatActivity {
-/*    private Fragment fragment;
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+    private Fragment fragment;
+    private BottomNavigationView.OnNavigationItemSelectedListener
+            mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
             switch (item.getItemId()) {
                 case R.id.navigation_home_pegawai:
                     fragment = new HomePegawaiFragment();
+                    loadFragment(fragment);
+                    return true;
+                case R.id.navigation_history_pegawai:
+                    fragment = new HistoryPegawaiFragment();
                     loadFragment(fragment);
                     return true;
 
@@ -66,12 +65,26 @@ public class MainPegawai extends AppCompatActivity {
         transaction.commit();
     }
 
+    boolean singleBack = false;
+
     @Override
     public void onBackPressed() {
-        //Close the application when back button is pressed
-        finish();
+        if (singleBack) {
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            super.onBackPressed();
+            return;
+        }
+        this.singleBack = true;
+        Toast.makeText(this, "Tap again to exit", Toast.LENGTH_LONG).show();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                singleBack = false;
+            }
+        }, 2000);
     }
-
- */
-
 }
