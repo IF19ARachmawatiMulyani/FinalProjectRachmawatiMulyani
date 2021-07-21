@@ -12,9 +12,11 @@ public class logIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
-
-        public void Masuk(View view) {
-            Intent pegawai = new Intent(Login.this, FormLogin.class);
-            startActivity(pegawai);
     }
+
+    public void Masuk(View view) {
+        Intent pegawai = new Intent(logIn.this, FormLogin.class);
+        startActivity(pegawai);
+    }
+
 }

@@ -40,7 +40,7 @@ public class CurrentLaundryAdapter extends BaseAdapter {
     public View getView(int i, View convertView, ViewGroup viewGroup) {
 
         LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView = inflater.inflate(R.layout.current_laundry, null);
+        convertView = inflater.inflate(R.layout.activity_current_laundry_adapter, null);
 
         TextView name = (TextView) convertView.findViewById(R.id.nama_pemesan);
         TextView tanggalMulai = (TextView) convertView.findViewById(R.id.tanggal_mulai);

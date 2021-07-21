@@ -20,7 +20,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainPegawai extends AppCompatActivity {
-    private Fragment fragment;
+/*    private Fragment fragment;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -71,5 +71,7 @@ public class MainPegawai extends AppCompatActivity {
         //Close the application when back button is pressed
         finish();
     }
-}
 
+ */
+
+}
