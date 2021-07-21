@@ -18,5 +18,9 @@ public class logIn extends AppCompatActivity {
         Intent pegawai = new Intent(logIn.this, FormLogin.class);
         startActivity(pegawai);
     }
+    public void Customer(View view) {
+        Intent customer = new Intent(logIn.this, HomeCustomer.class);
+        startActivity(customer);
+    }
 
 }

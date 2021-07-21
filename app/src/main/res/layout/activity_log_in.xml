@@ -62,8 +62,20 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:onClick="Masuk"
-            android:text="Log in"
+            android:text="Log in pegawai"
             android:textAllCaps="true"/>
+        <Button
+            android:id="@+id/button_Masukcustomer"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="320dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:onClick="Customer"
+            android:text="Log in Customer"
+            android:textAllCaps="true"/>
+
 
 
     </LinearLayout>
