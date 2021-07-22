@@ -85,7 +85,7 @@
             android:layout_marginStart="5dp"
             android:paddingTop="5dp"
             android:text="21 Juli 2021"
-            android:textColor="#000ff"
+            android:textColor="#000FFF"
             android:textSize="12dp" />
 
     </LinearLayout>
