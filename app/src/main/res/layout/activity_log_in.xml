@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".logIn">
@@ -11,47 +12,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textStyle="normal"
-            android:text="Username"
-            android:layout_marginTop="10dp"/>
-
-        <EditText
-            android:id="@+id/etUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Masukkan username"
-            android:inputType="text"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textStyle="normal"
-            android:text="Password"
-            android:layout_marginTop="20dp"/>
-
-        <EditText
-            android:id="@+id/etPass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Masukkan password"
-            android:inputType="text"
-            android:textSize="20sp" />
+        android:gravity="center"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:adjustViewBounds="false"
-            android:src="@mipmap/logo"
             android:layout_gravity="center"
-            android:layout_marginBottom="30dp" />
+            android:layout_marginBottom="30dp"
+            android:adjustViewBounds="false"
+            android:src="@mipmap/logo" />
 
         <Button
             android:id="@+id/button_Masuk"
@@ -63,7 +33,8 @@
             android:layout_gravity="center"
             android:onClick="Masuk"
             android:text="Log in pegawai"
-            android:textAllCaps="true"/>
+            android:textAllCaps="true" />
+
         <Button
             android:id="@+id/button_Masukcustomer"
             style="@style/Widget.AppCompat.Button.Colored"
@@ -74,8 +45,7 @@
             android:layout_gravity="center"
             android:onClick="Customer"
             android:text="Log in Customer"
-            android:textAllCaps="true"/>
-
+            android:textAllCaps="true" />
 
 
     </LinearLayout>

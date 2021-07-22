@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormLogin"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    tools:context=".FormLogin">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp"
-        android:paddingTop="56dp">
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
 
         <TextView
             android:id="@+id/textView"
@@ -27,45 +27,40 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username"/>
-
+            android:text="E-Mail" />
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="Masukkan E-Mail Anda"
             android:inputType="text" />
-
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"/>
+            android:text="Password" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="Masukkan Password Anda"
             android:inputType="textPassword" />
-
-
 
         <Button
             android:id="@+id/btn_login"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
             android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
             android:backgroundTint="@color/teal_200"
             android:onClick="Login"
             android:padding="12dp"
             android:text="Log In"
             android:textColor="@color/white" />
-
 
         <TextView
             android:id="@+id/link_register"

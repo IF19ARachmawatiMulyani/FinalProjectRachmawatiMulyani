@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,8 +19,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Register_pegawai extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
-    EditText email, password, username;
+    EditText email, password;
     Button register;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,23 +30,29 @@ public class Register_pegawai extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
-        username = findViewById(R.id.username);
         register = findViewById(R.id.btn_login);
+
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                firebaseAuth.createUserWithEmailAndPassword(email.getText().toString(),
-                        password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()) {
-                            Toast.makeText(Register_pegawai.this, "Registered successfully", Toast.LENGTH_LONG).show();
-                        }else{
-                            Toast.makeText(Register_pegawai.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                if (TextUtils.isEmpty(email.getText().toString()) || TextUtils.isEmpty(password.getText().toString())) {
+                    Toast.makeText(Register_pegawai.this, "Kolom tidak boleh kosong", Toast.LENGTH_LONG).show();
+                } else {
+                    firebaseAuth.createUserWithEmailAndPassword(email.getText().toString(),
+                            password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(Register_pegawai.this, "Registered successfully", Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(Register_pegawai.this, FormLogin.class);
+                                startActivity(intent);
+                            } else {
+                                Toast.makeText(Register_pegawai.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
         });
     }

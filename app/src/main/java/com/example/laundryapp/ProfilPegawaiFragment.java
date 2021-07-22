@@ -33,8 +33,10 @@ public class ProfilPegawaiFragment extends Fragment {
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         String userID = firebaseUser.getUid();
         email.setText(firebaseUser.getEmail());
+        name.setText(userID);
+        username.setText(firebaseUser.getDisplayName());
 
-        TextView editprofile = (TextView)   view.findViewById(R.id.editProfile);
+        TextView editprofile = (TextView) view.findViewById(R.id.editProfile);
         editprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
