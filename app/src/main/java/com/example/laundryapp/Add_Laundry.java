@@ -135,7 +135,7 @@ public class Add_Laundry extends AppCompatActivity {
         int auto = random.nextInt(100);
 
         Date date = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd MMM yyyy");
 
         tambahLaundry.setOnClickListener(view -> {
             Toast.makeText(getApplicationContext(), "Data ditambahkan", Toast.LENGTH_LONG).show();

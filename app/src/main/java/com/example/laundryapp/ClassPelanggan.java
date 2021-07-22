@@ -1,7 +1,7 @@
 package com.example.laundryapp;
 
 public class ClassPelanggan {
-    String status, Nama,  catatankhusus,  parfum, berat, estimasi, totalHarga, ID, tanggalMasusk;
+    String status, Nama,  catatankhusus,  parfum, berat, estimasi, totalHarga, ID, tanggalMasuk;
 
     public ClassPelanggan() {
     }
@@ -9,7 +9,7 @@ public class ClassPelanggan {
     public ClassPelanggan(String nama, String berat, String catatankhusus, String estimasi, String parfum, String totalHarga, String status, String id, String tglmasusk) {
         this.ID = id;
         this.Nama = nama;
-        this.tanggalMasusk = tglmasusk;
+        this.tanggalMasuk = tglmasusk;
         this.berat = berat;
         this.catatankhusus = catatankhusus;
         this.estimasi = estimasi;
@@ -77,12 +77,12 @@ public class ClassPelanggan {
         this.ID = ID;
     }
 
-    public String gettanggalMasusk() {
-        return tanggalMasusk;
+    public String gettanggalMasuk() {
+        return tanggalMasuk;
     }
 
-    public void settanggalMasusk(String tanggalMasusk) {
-        this.tanggalMasusk = tanggalMasusk;
+    public void settanggalMasuk(String tanggalMasusk) {
+        this.tanggalMasuk = tanggalMasusk;
     }
 
     public void setTotalHarga(String totalHarga) {

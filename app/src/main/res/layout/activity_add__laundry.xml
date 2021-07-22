@@ -1,47 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add_Laundry"
-    android:padding="8dp">
+    android:padding="8dp"
+    tools:context=".Add_Laundry">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tambah Pesanan Laundry"
-            android:textSize="18dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
+            android:text="Tambah Pesanan Laundry"
             android:textAlignment="center"
-            android:textColor="#000"/>
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/nama_pemesan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nama"
-                android:inputType="textCapWords"/>
+                android:inputType="textCapWords" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/parfum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Parfum"
-                android:inputType="textCapWords"/>
+                android:inputType="textCapWords" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
@@ -54,23 +57,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="9"
                 android:paddingRight="10dp">
+
                 <EditText
                     android:id="@+id/berat_cucian"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Berat"
-                    android:inputType="numberDecimal"/>
+                    android:inputType="numberDecimal" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textSize="20dp"
                 android:gravity="bottom"
                 android:paddingBottom="10dp"
+                android:text="kg"
                 android:textColor="#000"
-                android:text="kg"/>
+                android:textSize="20dp" />
 
         </LinearLayout>
 
@@ -84,98 +88,104 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="9"
                 android:paddingRight="10dp">
+
                 <EditText
                     android:id="@+id/lamaPencucian"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Estimasi lama pencucian"
-                    android:inputType="number"/>
+                    android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textSize="20dp"
                 android:gravity="bottom"
                 android:paddingBottom="10dp"
+                android:text="hari"
                 android:textColor="#000"
-                android:text="hari"/>
+                android:textSize="20dp" />
 
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/catatan_khusus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Catatan khusus"
-                android:inputType="textMultiLine"/>
+                android:inputType="textMultiLine" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Item khusus"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:textSize="18dp"
-            android:textColor="#000" />
+            android:text="Item khusus"
+            android:textColor="#000"
+            android:textSize="18dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <CheckBox
                 android:id="@+id/sepatu_cb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
-                android:text="Sepatu"/>
+                android:text="Sepatu"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/selimut_cb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
-                android:text="Selimut"/>
+                android:text="Selimut"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/tas_cb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
-                android:text="Tas"/>
+                android:text="Tas"
+                android:textSize="18dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Rincian Harga"
-                android:textSize="18dp"
-                android:textColor="#000"/>
+                android:textColor="#000"
+                android:textSize="18dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingLeft="10dp">
+
                 <TextView
                     android:id="@+id/harga_kilo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="0 kg x 0 = Rp.0"
-                    android:textSize="18dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:textSize="18dp" />
 
                 <TextView
                     android:id="@+id/harga_tambahan"
@@ -185,14 +195,15 @@
                     android:textColor="#000"
                     android:textSize="18dp" />
             </LinearLayout>
+
             <TextView
                 android:id="@+id/total_harga"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="#000"
                 android:text="TOTAL : Rp.0"
-                android:textStyle="bold"/>
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <Button
@@ -201,10 +212,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="#009688"
-            android:textColor="#fff"
             android:text="Tambahkan Pesanan"
-            android:textStyle="bold"
-            android:textSize="16dp"/>
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </ScrollView>

@@ -15,15 +15,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="8dp"
             android:text="Detail Pesanan Laundry"
             android:textAlignment="center"
             android:textColor="#000"
+            android:textStyle="bold"
             android:textSize="18dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
             <TextView
@@ -229,7 +231,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -237,21 +239,32 @@
                 android:id="@+id/edit_laundry_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
                 android:background="#009688"
-                android:text="Edit Pesanan"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="Edit\nPesanan"
                 android:textColor="#fff"
                 android:textSize="16dp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/hapus_laundry_btn"
+                android:gravity="center"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
                 android:background="#009688"
-                android:text="Hapus Pesanan"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="5dp"
+                android:text="Hapus\n Pesanan  "
                 android:textColor="#fff"
                 android:textSize="16dp"
                 android:textStyle="bold" />

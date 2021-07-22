@@ -59,6 +59,7 @@ public class HomeCustomer extends AppCompatActivity {
             public void onBindViewHolder(@NonNull Holder holder, int position, @NonNull final ClassPelanggan model) {
                 progressBar.setVisibility(View.GONE);
                 holder.ID.setText(model.getID());
+                holder.tgl.setText(model.gettanggalMasuk());
                 holder.nama.setText(model.getNama());
                 holder.harga.setText(model.getTotalHarga());
                 holder.status.setText(model.getStatus());
@@ -75,12 +76,13 @@ public class HomeCustomer extends AppCompatActivity {
 
     public class Holder extends RecyclerView.ViewHolder {
         TextView nama;
-        TextView harga, ID, status;
+        TextView harga, ID, status, tgl;
         ConstraintLayout constraintLayout;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
             ID = itemView.findViewById(R.id.Id);
+            tgl = itemView.findViewById(R.id.tanggalcustomer);
             nama = itemView.findViewById(R.id.tvNama);
             status = itemView.findViewById(R.id.tvstatus);
             harga = itemView.findViewById(R.id.tvHarga);
